@@ -39,10 +39,10 @@ exposição de dados sensíveis, as mensagens trocadas entre os usuários e os s
 não estão sendo criptografados. Qual serviço pode auxiliar no reparo deste problema?
 
 
-*AWS Certificate Manager* 
-AWS IAM
-AWS KMS
-AWS Cognito
+- [X] AWS Certificate Manager
+- [ ] AWS IAM
+- [ ] AWS KMS
+- [ ] AWS Cognito
 
 Explicação
 Correta
@@ -67,10 +67,10 @@ Você irá disponibilizar uma aplicação crítica e com dados sensíveis na Int
 serviço que te ajuda a identificar vulnerabilidades de segurança e riscos de exposição de
 acordo com as melhores práticas e compliance?
 
-*O AWS Inspector*
-O AWS Macie
-O AWSKMS
-O AWS GuardDuty
+- [X] O AWS Inspector
+- [ ] O AWS Macie
+- [ ] O AWS KMS
+- [ ] O AWS GuardDuty
 
 Explicação
 Correta
@@ -102,11 +102,10 @@ Sua empresa deseja otimizar o custo com a utilização do S3 e você notou que e
 muitas logs armazenadas e que poderiam ser deletadas após 30 dias da criação. O que
 pode ser feito para essa otimização?
 
-*Configurar no S3 Lifecycle para que os objetos expirem em 30 dias para serem automaticamente excluídos.*
-Criar uma cópia destes objetos em outra região
-Configurar o CloudWatch para monitorar o S3 e enviar um email solicitando
-a exclusão dos arquivos
-Criar uma cópia destes objetos em outra zona de disponibilidade
+- [X] Configurar no S3 Lifecycle para que os objetos expirem em 30 dias para serem automaticamente excluídos.
+- [ ] Criar uma cópia destes objetos em outra região
+- [ ] Configurar o CloudWatch para monitorar o S3 e enviar um email solicitando a exclusão dos arquivos
+- [ ] Criar uma cópia destes objetos em outra zona de disponibilidade
 
 Explicação
 Correta
@@ -125,10 +124,10 @@ e decidiu utilizar uma arquitetura de sistemas orientada a eventos. Qual dos ser
 abaixo pode ser utilizado como um barramento escalável de eventos para facilitar a
 criação dessa arquitetura?
 
-Amazon EventSync
-Amazon Lambda
-Amazon SQS
-*Amazon EventBridge*
+- [ ] Amazon EventSync
+- [ ] Amazon Lambda
+- [ ] Amazon SQS
+- [X] Amazon EventBridge*
 
 Explicação
 Correta
@@ -153,10 +152,10 @@ Qual é a forma de permitir que seus serviços sejam expostos sempre no mesmo
 endereço IP e de possibilitar que os hosts associados a ele sejam substituídos de forma
 simples na sua infraestrutura?
 
-*Utilizando um IP Elástico*
-Utilizando um IPV6
-Utilizando um IPV4
-Utilizando o Route 53
+- [X] Utilizando um IP Elástico*
+- [ ] Utilizando um IPV6
+- [ ] Utilizando um IPV4
+- [ ] Utilizando o Route 53
 
 Explicação
 O IP Elástico permite manter um IP ativo como porta de entrada e também que sejam
@@ -170,10 +169,10 @@ https:Waws.amazon.com/pt/ec2/features/
 Oual é o banco de dados relacional totalmente gerenciado pela AWS e que pode ser 5 x
 mais rápido que o MySQL?
 
-ManaDb
-Neptune
-DynamoDb
-*Aurora*
+- [ ] ManaDb
+- [ ] Neptune
+- [ ] DynamoDb
+- [X] Aurora*
 
 Explicação
 O Amazon Aurora é um banco de dados compativel com MySQL e PostgreSOL criado
@@ -213,10 +212,10 @@ opção
 
 Qual é a opção de armazenamento default do serviço S3?
 
-Glacier
-Infrequent Access
-*Standard*
-Frequent Access
+- [ ] Glacier
+- [ ] Infrequent Access
+- [X] Standard*
+- [ ] Frequent Access
 
 Explicação
 O Standard está definido como padrão por oferecer diversas otimizações, usar as outras
@@ -236,10 +235,10 @@ automática é a Inteligente Tiering.
 Oual é o serviço que garante que você tenha o correto número de instâncias EC2
 dis;xníveis para lidar com a carga da sua aplicação?
 
-Route5.3
-*EC2 Auto Scaling*
-O vpc
-O ELB
+- [ ] Route53
+- [X] EC2 Auto Scaling
+- [ ] VPC
+- [ ] ELB
 
 Explicação
 Correta
@@ -280,10 +279,10 @@ Você implantou uma aplicação em produção que não está funcionando e na lo
 uma mensagem de acesso negado ao DynamoDB. Oual serviço você precisa checar e
 configurar corretamente para validar esse acesso?
 
-*O AWS IAM roles*
-O AWS IAM Policy
-O AWS Config
-O AWS Cognito
+- [x] O AWS IAM roles
+- [ ] O AWS IAM Policy
+- [ ] O AWS Config
+- [ ] O AWS Cognito
 
 Explicação
 Correta
@@ -308,10 +307,10 @@ mobile
 Quais dos seguintes planos de suporte oferecem acesso ao atendimento ao cliente,
 whitepapers, documentações e fóruns de suporte 24x7? (Selecione 2)
 
-*Basic*
-Full
-*Enterprise*
-Reserved
+- [x] *Basic*
+- [ ] Full
+- [x] *Enterprise*
+- [ ] Reserved
 
 Explicação
 
@@ -337,10 +336,10 @@ cada um deles, partir desde a requisição do usuário para entender a performan
 identificar oportunidades de melhorias. Qual serviço da AWS é o mais indicado para essa
 finalidade (tanto em ambiente de desenvolvimento quanto em ambiente de produção)?
 
-AWS CloudWatch
-AWS CloudSearch
-AWS OpenSearch
-*AWS X-Ray*
+- [ ] AWS CloudWatch
+- [ ] AWS CloudSearch
+- [ ] AWS OpenSearch
+- [x] AWS X-Ray
 
 Explicação
 Correta
@@ -372,10 +371,10 @@ baixa performance, a concorrência entre um grande volume de consultas e outras 
 na base de dados têm aumentando a latência no tráfego dos dados. Qual é a maneira
 mais ágil e econômica de resolver este problema?
 
-Atualizar a role de acesso ao banco
-Criar novas instâncias do RDS em outra zona de disponibilidade.
-Substituir o RDS pelo Dynamo
-*Fazer o uso de Read Replicas*
+- [ ] Atualizar a role de acesso ao banco
+- [ ] Criar novas instâncias do RDS em outra zona de disponibilidade.
+- [ ] Substituir o RDS pelo Dynamo
+- [x] Fazer o uso de Read Replicas
 
 Explicação
 
@@ -400,10 +399,10 @@ falhas e também não é a opção mais econômica para esse cenário.
 Sua empresa deseja lançar um novo produto e para isso precisa criar um novo domínio
 público para associá-lo a um novo site. Qual é a maneira mais rápida de fazer isso?
 
-*Criar um novo domínio no AWS Route53*
-Desenvolver o novo site no AWS BeanStalk, que provisiona toda a infra para o desenvolvedor apenas programar.
-Criar um servidor de domínio numa instância AWS EC2 e incluir o novo domínio
-Criar um novo domínio no RegistroCom
+- [x] Criar um novo domínio no AWS Route53
+- [ ] Desenvolver o novo site no AWS BeanStalk, que provisiona toda a infra para o desenvolvedor apenas programar.
+- [ ] Criar um servidor de domínio numa instância AWS EC2 e incluir o novo domínio
+- [ ] Criar um novo domínio no RegistroCom
 
 Explicação
 Correta
@@ -423,10 +422,10 @@ bancos de dados, além disso, deseja que esses serviços sejam implementados e
 atualizados em toda os servidores de forma automatizada, utilizando pipelines de CI/CD.
 Qual é o serviço recomendado para esse requisito?
 
-AWS CodePipeline
-AWS IAC
-AWS RDS
-*AWS CloudFormation*
+- [ ] AWS CodePipeline
+- [ ] AWS IAC
+- [ ] AWS RDS
+- [x] AWS CloudFormation
 
 Explicação
 
@@ -453,10 +452,10 @@ questão.
 Você precisa implementar uma estratégia de DR (Recuperação de Desastre) na sua
 empresa, qual é a recomendação de melhor uso do AWS RDS?
 
-Multi A-Z (Distribuir em zonas de disponibilidade diferentes)
-Multi Regions (Distribuir em regiões diferentes)
-Implementar uma cópia do banco numa instância EC2
-Read Replicas (Fazer cópias de leitura)
+- [ ] Multi A-Z (Distribuir em zonas de disponibilidade diferentes)
+- [ ] Multi Regions (Distribuir em regiões diferentes)
+- [ ] Implementar uma cópia do banco numa instância EC2
+- [x] Read Replicas (Fazer cópias de leitura)
 
 Explicação
 Estratégia Multi Region
@@ -474,10 +473,10 @@ Você deseja monitorar o percentual de memória que os seus servidores estão ut
 em determinando período do dia. Qual serviço da AWS pode ser utilizado para essa
 finalidade?
 
-AWS DataSync
-*AWS CloudWatch*
-AWS Cost Explorer
-AWS CloudTrail
+- [ ] AWS DataSync
+- [x] AWS CloudWatch
+- [ ] AWS Cost Explorer
+- [ ] AWS CloudTrail
 
 Explicação
 Correta
@@ -499,10 +498,10 @@ Você está desenvolvendo uma aplicação mobile e precisa implementar o
 armazenamento e sincronismo de dados para vários dispositivos. Qual é o serviço AWS
 que pode ser utilizado para esse fim?
 
-*AWS Cognito*
-AWS ElastiCache
-AWS DynamoDB
-AWS Redis
+- [X] AWS Cognito
+- [ ] AWS ElastiCache
+- [ ] AWS DynamoDB
+- [ ] AWS Redis
 
 Explicação
 Correta
@@ -529,10 +528,10 @@ microsserviços com conteiners. Qual serviço pode auxiliá-lo numa abordagem se
 servidor e que traz velocidade nas entregas, uma vez que você não precisa se preocupar
 com questões de infraestrutura?
 
-O ECR
-O Ecs
-O EKS
-*Fargate*
+- [ ] ECR
+- [ ] Ecs
+- [ ] EKS
+- [X] Fargate
 
 Explicação
 
