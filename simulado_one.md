@@ -1169,7 +1169,7 @@ https://aws.amazon.com/pt/autoscaling/
 
 **Incorretas**
 
-Incluir méquina fisica é algo incomum na cloud, uma vez que as instáncias, em sua
+Incluir máquina fisica é algo incomum na cloud, uma vez que as instáncias, em sua
 grande maioria, são virtualizadas. Existe até um modelo chamado de dedicated hosts,
 mas que o uso por si Sd, não garante a esca•abilidade sem o uso do Auto Scalling
 A implementagão do ELB garante o balanceamento das cargas entre as instáncias,
@@ -1235,6 +1235,7 @@ determinar causadores de custos e detectar anomalias.
 https://aws.amazon.com/pt/aws-cost-management/aws-cost-explorer/
 
 **Incorretas**
+
 O AWS Trusted Advisor faz recomendaqóes que ajudam vocé a seguir as melhores
 práticas da AWS. O Trusted Advisor avalia a sua conta através de verificações.<br>
 O Amazon Inspector é um serviço de avaliação de segurança automático que ajuda a
@@ -1258,9 +1259,11 @@ e carregã-lo no seu sistema?
 
 ### Explicação
 **Correta**
+
 Glue - E um serviço indicado para ETI - Extrair, transformar e carregar dados
 
 **Incorretas**
+
 O AWS DTS não é um serviço disponivel na AWS<br>
 O AWS DataSync é utilizado para realizar a sincronização automatica entre dados da
 infraestrutura on premise e da AWS.<br>
@@ -1372,7 +1375,7 @@ instáncias EC2?
 
 ### Explicação
 **Correta**
-
+desc
 Eas - Elastic Block Store<br>
 O EBS é um dos serviços que oferece armazenamento de dados para ser incorporado
 instãncias EC2 e atender diversas finalidades computacionais, como sistema
@@ -1568,6 +1571,7 @@ visualização integrada.
 https://aws.amazon.com/pt/opensearch-service/the-elk-stack/what-is-opensearch/
 
 **Incorretas**
+
 O CloudSearch oferece um serviqo de busca e localização para ser implementado no seu
 website.<br>
 O Athena é um serviqo servless que permite a consulta com SQL em buckets no S3.<br>
@@ -1828,8 +1832,7 @@ definindo e controlando os possiveis workflows. Qual dos serviços abaixo é uti
 Com o AWS Step Function é possivel orquestrar e paralelizar vários serviqos da AWS
 para executar um processo quando existirem todas as variáveis necessárias para isso.
 Além disso tem uma interface gráfica que permite visualizar cada passo do workflow.
-https://aws.amazon.com/step-functions/?c=ser&sec=srv&step-functions.sort-
-by=item.additionalFields.postDateTime&step-functions.sort-order=desc
+https://aws.amazon.com/step-functions/?c=ser&sec=srv&step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc
 
 **Incorretas**
 
@@ -1859,6 +1862,7 @@ nesta atividade?
 
 O CloudTrail loga a chamada de todas as chamadas de API que são usadas para o
 desligamento de recursos na infraestrutura da AWS
+
 **Incorretas**
 
 AWS Audit não é um serviqo válido na AWS<br>
@@ -1890,6 +1894,7 @@ faz um gerenciamento melhor dos recursos da rnáquina de acordo com a demanda da
 aplicação. A aplicação inteira vai ficar num ünico container.
 https://aws.amazon.com/pt/getting-started/hands-on/break-monolith-app-
 microservices-ecs-docker-ec2/module-one/
+
 **Incorretas**
 
 O ECS aceita a aplicação de acordo com a capacidade da infraestrutura utilizada, mas o
