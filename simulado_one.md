@@ -11,7 +11,7 @@ mais diversas necessidades de neçõcio?
 
 ### Explicação
 
-****Correta****
+**Correta**
 
 AWS Marketplace
 
@@ -24,7 +24,7 @@ a sua empresa tem a necessidade de comprar alguma aplicação pronta para atende
 alguma finalidade latente e especifica, cuja compra seja melhor que o desenvolvi mento.
 https•Waws-amazon.com/marketpIace/?nc2=type_a
 
-****Incorretas****
+**Incorretas**
 
 O AWS MFA - Multi Factor Authentication adiciona uma camada a mais no processo de
 autenticação no login pelo ConSQLe
