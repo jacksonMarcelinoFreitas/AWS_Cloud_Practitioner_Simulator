@@ -1904,7 +1904,7 @@ recursos, além de facilitar futuras evoluqóes e manutenqóes.
 
 #
 
-## Pergunta 65: Incorreto
+## Pergunta 65: 
 Qual das opções abaixo é a classe que pode deixar o uso do S3 mais caro?
 
 - [ ] Glacier
