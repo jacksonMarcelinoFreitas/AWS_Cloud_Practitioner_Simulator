@@ -234,7 +234,7 @@ objeto na AWS que, quando associado a uma identidade ou um recurso, define suas
 permissões. A AWS avalia essas políticas quando uma entidade de segurança do IAM
 (usuário ou função) faz uma solicitação. As permissões nas políticas determinam se a
 solicitação será permitida ou negada.<br>A maioria das políticas são armazenadas na AWS
-como documentos JSON<br>
+como documentos JSONc
 https://docs.aws.amazon.com/pt_br/lAM/latest/lJserGuide/access_policies.html
 
 **Incorretas**
@@ -250,7 +250,7 @@ Qual é a principal função do Security Group?
 - [ ] É servir apenas para agrupar recursos dentro de uma rede privada
 - [ ] É proteger os data centers físicos da AWS
 - [ ] É proteger a infraestrutura global da AWS de ataques de hackers
-- [X] *E servir como uma espécie de firewall para controlar a autorização do tráfego de entrada e saída de máquinas EC2 que estejam associados a ele.*
+- [X] E servir como uma espécie de firewall para controlar a autorização do tráfego de entrada e saída de máquinas EC2 que estejam associados a ele.
 
 ### Explicação
 
@@ -264,21 +264,21 @@ https://aws.amazon.com/vpc/details/
 
 **Incorretas**
 
-A proteção física da AWS e da infraestrutura global é de responsabilidade da AWS.
+A proteção física da AWS e da infraestrutura global é de responsabilidade da AWS.<br>
 O security group tem a finalidade de agrupar os servidores com o intuito de controlar o
 tráfego de entrada e saída de dados.
 
 #
 
 ## Pergunta 11: 
-Você está desenvolvendo um serviço para enviar diariamente e-mails de aniversário para
+Você está desenvolvendo um serviço para enviar diariamente **e-mails** de aniversário para
 mais de 1000 clientes. Qual é o serviço ofertado pela a AWS que pode se integrar a
 qualquer aplicação para atender a esse requisito?
 
 - [ ] AWS EventBridge
 - [ ] AWS SNS
 - [ ] AWS CloudWatch
-- [X] *AWS SES*
+- [X] AWS SES
 
 ### Explicação
 
@@ -290,10 +290,10 @@ https://aws.amazon.com/pt/ses/?nc2=h_ql_prod_ce_ses
 **Incorretas**
 
 O SNS é o serviço utilizado para troca de mensagens no esquema Pub/Sub e utilização
-de tópicos
+de tópicos<br>
 O EventBridge é um barramento de eventos que pode se utilizado para diversos serviços
-e aplicações na AWS
-O CloudWatch para coletar métricas, monitorar serviços e gerar log de aplicações
+e aplicações na AWS<br>
+O CloudWatch para coletar métricas, monitorar serviços e gerar log de aplicações<br>
 
 #
 
@@ -310,11 +310,15 @@ telefone, e-mail e chat 24 horas por dia, 7 dias por semana?
 
 **Correta**s
 
-Os planos existentes são
-Basic, Developer, Business, Enterprise on-Ramp e Enterprise.
-(Correto)
+Os planos existentes são:
+- Basic<br>
+- Developer<br>
+- Business<br>
+- Enterprise on-Ramp<br>
+- Enterprise.<br>
+
 Esse tipo de suporte só é oferecido para os planos recomendados para cargas de
-produção, o Business, Enterprise on-Ramp e Enterprise
+produção, o Business, Enterprise on-Ramp e Enterprise<br>
 https://aws.amazon.com/pt/premiumsupport/plans/?nc=sn&loc=l
 
 **Incorretas**
@@ -344,10 +348,10 @@ https://aws.amazon.com/pt/cli/
 
 **Incorretas**
 
-AWS Console Management é o serviço que você usa para acessar e gerenciar a Nuvem
-AWS, em uma única interface webAWS
+AWS Console Management é o serviço que você usa para acessar e gerenciar a Nuvem<br>
+AWS, em uma única interface webAWS<br>
 SDK simplifica o uso do AWS Services, fornecendo um conjunto de ferramentas e
-bibliotecas consistentes e familiares para os desenvolvedores
+bibliotecas consistentes e familiares para os desenvolvedores<br>
 AWS Run é um serviço que não existe na AWS
 
 #
@@ -372,13 +376,13 @@ responderem as demandas da aplicação com o mínimo impacto possível.
 
 Distribuir as instâncias em duas VPCs diferentes e dentro da mesma zona de
 disponibilidade não garante a resiliência, se a AZ ficar indisponível, as duas VPCs
-também ficarão e impactarão a aplicação.
+também ficarão e impactarão a aplicação.<br>
 Fazer uso do CloudFront ajuda a melhorar a performance na distribuição de conteúdo, se
 a origem da informação estiver numa única AZ e a mesma ficar indisponível, mesmo
-como o uso do CloudFront, a aplicação poderá ser impactada.
+como o uso do CloudFront, a aplicação poderá ser impactada.<br>
 Utilizar o Auto Scaling para subir uma máquina sempre que a outra cair garante que um
 recurso esteja disponível, entretanto, se estiver numa única AZ que apresenta problema,
-corre o risco de ficar indisponível.
+corre o risco de ficar indisponível.<br>
 
 #
 
@@ -398,21 +402,21 @@ permita tal integração?
 **Correta**
 
 Com o AWS SDKs, você acessa e gerencia serviços da AWS com sua linguagem ou
-plataforma de desenvolvimento preferida.
-SDKs de mobilidade - Web e Plataforma Móvel
-SDKs para dispositivos IOT
-IDE e Kits de ferramentas de IDE
-Ferramentas da linha de comando
-Ferramentas do desenvolvedor da AWS
-Linguagens: JavaScript, Python, Java, C#, PHP, Node, .Net, etc.
+plataforma de desenvolvimento preferida.<br>
+SDKs de mobilidade - Web e Plataforma Móvel<br>
+SDKs para dispositivos IOT<br>
+IDE e Kits de ferramentas de IDE<br>
+Ferramentas da linha de comando<br>
+Ferramentas do desenvolvedor da AWS<br>
+Linguagens: JavaScript, Python, Java, C#, PHP, Node, .Net, etc.<br>
 https://aws.amazon.com/pt/getting-started/tools-sdks/?nc2=type_a
 
 **Incorretas**
 
 O AWS workspaces oferece desktops virtuais windows e linux para de acordo com a
-necessidade.
+necessidade.<br>
 O AWS Console Manager é a interface web utilizada para gerenciar todos os serviços da
-AWS.
+AWS.<br>
 O AWS CLI é o serviço utilizado para acessar e gerenciar os serviços da AWS através da
 linha de comando.
 
@@ -430,17 +434,15 @@ Qual dos serviços abaixo é uma solução para a criação de conteiners na AWS
 
 **Correta**
 
-ECS - Elastic Conteiner Service
-https://aws.amazon.com/ecs/?whats-new-cards.sort-
-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-
-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc
+ECS - Elastic Conteiner Service<br>
+https://aws.amazon.com/ecs/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc
 
 **Incorretas**
 
 O Amazon Elastic Compute Cloud (Amazon EC2) é um serviço Web que disponibiliza
-capacidade computacional segura e redimensionável na nuvem
+capacidade computacional segura e redimensionável na nuvem<br>
 O AWS Auto Scaling monitora os aplicativos e ajusta automaticamente a capacidade
-para manter um desempenho constante e previsível pelo menor custo possível.
+para manter um desempenho constante e previsível pelo menor custo possível.<br>
 O Amazon Elastic Container Registry (Amazon ECR) é um registro de contêiner
 totalmente gerenciado que facilita o armazenamento, o gerenciamento, o
 compartilhamento e a implantação de imagens e artefatos de contêiner em qualquer
@@ -462,20 +464,20 @@ implantados ou enquanto estiverem em execução em ambiente de produção?
 
 **Correta**
 
-AWS Inspector
+AWS Inspector<br>
 https://aws.amazon.com/pt/inspector/?nc2=h_ql_prod_se_in
 
 **Incorretas**
 
 O AWS Trusted Advisor te auxilia checando o ambiente e te indicando as melhores
-práticas de implementação
+práticas de implementação<br>
 O Amazon GuardDuty é um serviço de detecção de ameaças que monitora
 continuamente atividades mal-intencionadas e comportamentos não autorizados para
 proteger suas contas, cargas de trabalho e dados da AWS armazenados no Amazon S3
-https://aws.amazon.com/pt/guardduty/?nc2=type_a
+https://aws.amazon.com/pt/guardduty/?nc2=type_a<br>
 O AWS WAF é um firewall de aplicações Web que ajuda a proteger suas aplicações Web
 ou APIS contra bots e exploits comuns na Web que podem afetar a disponibilidade,
-comprometer a segurança ou consumir recursos em excesso.
+comprometer a segurança ou consumir recursos em excesso.<br>
 https://aws.amazon.com/pt/waf/?nc2=type_a
 
 #
@@ -495,12 +497,12 @@ servidores físicos dedicados. Qual é o serviço que pode atender essa necessid
 
 **Correta**
 
-Hosts dedicados oferece essas características
+Hosts dedicados oferece essas características<br>
 https://aws.amazon.com/pt/ec2/dedicated-hosts/
 
 **Incorretas**
 
-Hosts reservardos e EC2 dedicados não existem
+Hosts reservardos e EC2 dedicados não existem<br>
 O EC2 pode ser utilizado com o meio de pagamento Reserved, onde é possível reservar
 as instâncias necessárias por um período de 1 a 3 e ter uma economia de
 aproximadamente 72% se comparado ao meio OnDemand, entretanto é uma forma
@@ -523,12 +525,12 @@ serviços da AWS e os recursos internos conectados?
 
 **Correta**
 
-Certificate Manager
+Certificate Manager<br>
 https://aws.amazon.com/pt/certificate-manager/?nc2=h_ql_prod_se_cm
 
 **Incorretas**
 
-AWS Protocols e Security não são serviços ofertados pela AWS.
+AWS Protocols e Security não são serviços ofertados pela AWS.<br>
 O AWS KMS - Key Management Service é utilizado para criar chaves de criptografia para
 diversos serviços mas não é indicado para SSL/TSL
 
@@ -549,11 +551,11 @@ para essa necessidade?
 **Correta**
 
 SNS - Simple Notifcation Service é um serviço de mensagens totalmente gerenciado
-para a comunicação de aplicação para aplicação e de aplicação para pessoa.
+para a comunicação de aplicação para aplicação e de aplicação para pessoa.<br>
 A funcionalidade pub/sub de aplicação para aplicação fornece tópicos para sistemas de
 mensagens de alta taxa de transferência baseados em push e de muitos para muitos
 entre sistemas distribuídos, microsserviços e aplicações sem servidor orientadas por
-eventos. Usando tópicos do Amazon SNS, seus sistemas editores podem repassar
+eventos.<br> Usando tópicos do Amazon SNS, seus sistemas editores podem repassar
 mensagens para um grande número de sistemas de assinantes, incluindo filas do
 Amazon SQS, funções do AWS Lambda e endpoints HTTPS e o Amazon Kinesis Data
 Firehose para processamento paralelo.
@@ -566,14 +568,14 @@ O Amazon Simple Oueue Service (SQS) é um serviço de filas de mensagens gerenci
 que permite o desacoplamento e a escalabilidade de microsserviços, sistemas
 distribuídos e aplicações sem servidor. O SOS elimina a complexidade e a sobrecarga
 associadas ao gerenciamento e à operação de middleware orientado a mensagens, além
-de permitir que os desenvolvedores se dediquem a criar diferenciais
+de permitir que os desenvolvedores se dediquem a criar diferenciais<br>
 O Amazon CloudWatch é um serviço de monitoramento e observação que fornece dados
 e insights práticos para monitorar aplicativos, responder às alterações de performance
 em todo o sistema, otimizar a utilização de recursos e obter uma visualização unificada
 da integridade operacional. O CloudWatch coleta dados de monitoramento e operações
 na forma de logs, métricas e eventos, oferecendo uma visualização unificada dos
 recursos, dos aplicativos e dos serviços da AWS executados na AWS e em servidores
-locais
+locais<br>
 O Amazon Simple Email Service (SES) é um serviço em nuvem de e-mail eficaz, flexível e
 dimensionável. Com ele, os desenvolvedores podem enviar e-mails de qualquer
 aplicação
@@ -596,15 +598,15 @@ de fluxos de trabalho para construir esses processos?
 **Correta**
 
 AWS Step Functions tem a finalidade de orquestrar todas as funções e também oferece a
-visualização da execução do processo
+visualização da execução do processo<br>
 https://aws.amazon.com/pt/step-functions/?nc2=h_ql_prod_ap_stf&step-
 functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc
 
 **Incorretas**
 
-O AWS BPM não é um serviço disponível na AWS.
+O AWS BPM não é um serviço disponível na AWS.<br>
 O AWS SQS - Simple Queue Service é um serviço de mensageria recomendado pra
-desacoplar sistemas e pode ser utilizado na arquitetura com Step Functions também.
+desacoplar sistemas e pode ser utilizado na arquitetura com Step Functions também.<br>
 O AWS SNS - Simple Message Service é um serviço de troca de mensagens
 recomendado para arquiteturas Pub/Sub e utilização de tópicos e também pode ser
 utilizado na arquitetura junto com o Step Function.
@@ -623,15 +625,15 @@ Qual recurso da AWS habilita o usuário a gerenciar os serviços através de int
 
 **Correta**
 
-AWS Console
+AWS Console<br>
 https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/learn-whats-new.html
 
 **Incorretas**
 
-AWS Mobile First não é um serviço existente na AWS
+AWS Mobile First não é um serviço existente na AWS<br>
 AWS SDK fornece diversas bibliotecas para integração a IDE de diversas linguagens de
-programação integrando com mais facilidade o desenvolvedor com os serviços da AWS.
-Ex. Java, C#, Node, Python, entre outras
+programação integrando com mais facilidade o desenvolvedor com os serviços da AWS.<br>
+Ex. Java, C#, Node, Python, entre outras<br>
 AWS CloudWatch serve para monitorar e gravar log de diversos serviços da AWS e de
 aplicações desenvolvidas pelos clientes.
 
@@ -655,7 +657,7 @@ transferências de arquivos rápidas, fáceis e seguras em longas distâncias en
 cliente e um bucket do S3. O Transfer Acceleration tira proveito dos pontos de presença
 distribuídos globalmente no Amazon CloudFront. Conforme os dados chegam em um
 ponto de presença, eles são roteados para o Amazon S3 por um caminho de rede
-otimizado.
+otimizado.<br>
 https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/transfer-
 acceleration.html
 
@@ -683,10 +685,10 @@ Qual não é uma característica do Amazon Cognito?
 O Amazon Cognito fornece autenticação, autorização e gerenciamento de usuários para
 suas aplicações Web e móveis. Seus usuários podem fazer login diretamente com um
 nome de usuário e uma senha ou por meio de terceiros, como o Facebook, a Amazon, o
-Google ou a Apple.
+Google ou a Apple.<br>
 Permite login social com Facebook, Google, Login with Amazon e Iniciar sessão com a
 Apple, bem como por meio de provedores de identidade SAML e OIDC a partir do seu
-grupo de usuários.
+grupo de usuários.<br>
 https://docs.aws.amazon.com/pt_br/cognito/latest/developerguide/what-is-amazon-
 cognito.html
 
@@ -710,7 +712,7 @@ Qual é a melhor opção para salvar arquivos com pouca necessidade de uso?
 
 **Correta**
 
-https://aws.amazon.com/s3/glacier/
+https://aws.amazon.com/s3/glacier/<br>
 S3 Glacier tem o custo otimizado, porém tem questões aos tempos de recuperação que
 precisam ser considerados em qualquer implementação
 
@@ -718,9 +720,9 @@ precisam ser considerados em qualquer implementação
 
 O EC2 - Elastic Computing Cloud oferece é o serviço que oferece diversas configurações
 de processamento e memória para alocar uma aplicação, não para armazenamento de
-dados
+dados<br>
 O DynamoDb é um serviço de banco de dados não relacional para persistir os dados de
-uma aplicação
+uma aplicação<br>
 O S3 - Simple Storage Service Standard é utilizado para salvar arquivos que sejam
 acessados com frequência numa solução, o seu custo é mais alto por isso.
 
@@ -741,23 +743,23 @@ mundo, podemos afirmar que?
 
 **Correta**
 
-É composta por 29 regiões, que estão divididas em aproximadamente 93 zonas de
-disponibilidade(az).
+É composta por 21 regiões, que estão divididas em aproximadamente 99 zonas de
+disponibilidade(az).<br>
 Essa informação pode mudar na medida que a AWS cresce e implementa data centers
-em novos países.
+em novos países.<br>
 https://aws.amazon.com/about-aws/global-infrastructure/?nc2=h_ql_le_int_gi
 
 **Incorretas**
 
-E atualmente composta por 29 zonas de disponibilidades(az), que estão divididas no
-mínimo em 93 regiões de disponibilidade
+E atualmente composta por 31 zonas de disponibilidades(az), que estão divididas no
+mínimo em 99 regiões de disponibilidade<br>
 O número de regiões é menor do que de zonas de disponibilidades, uma vez que uma
 região pode conter 3 ou mais zonas de disponibilidade, cada uma com o seu
-agrupamento de data centers.
+agrupamento de data centers.<br>
 E atualmente composta por 6 regiões, que estão divididas em mínimo em 200 zonas de
-disponibilidade.
+disponibilidade.<br>
 É atualmente composta por 6 zonas de disponibilidades(az) que estão divididas em
-mínimo em 200 regiões
+mínimo em 200 regiões<br>
 As regiões são posições estratégicas e não estão relacionadas a quantidade de
 continentes ou países.
 
@@ -785,7 +787,7 @@ forma rápida e fácil na AWS. Eles podem contar com a flexibilidade do uso de t
 serviços da AWS para se adaptar à evolução dos casos de uso. Com o Amplify, você pode
 configurar o backend de uma aplicação Web ou móvel e conectá-la em minutos, criar
 visualmente o frontend de uma IU para a Web e gerenciar facilmente o conteúdo da
-aplicação fora do Console AWS
+aplicação fora do Console AWS<br>
 https://aws.amazon.com/pt/amplify/
 
 **Incorretas**
@@ -793,9 +795,9 @@ https://aws.amazon.com/pt/amplify/
 O AWS Elastic Beanstalk é um serviço de fácil utilização para implantação e
 escalabilidade de aplicações e serviços da web desenvolvidos com Java, .NET, PHP,
 Node.js, Python, Ruby, Go e Docker em servidores familiares como Apache, Nginx,
-Passenger e IIS.
+Passenger e IIS.<br>
 AWS SDK permite que acesse e gerencie serviços da AWS com sua linguagem ou
-plataforma de desenvolvimento preferencial
+plataforma de desenvolvimento preferencial<br>
 O AWS Fargate é um mecanismo de computação sem servidor para contêineres que
 funciona com o ECS e EKS
 
@@ -836,7 +838,7 @@ código IP para acessar os recursos da Cloud?
 
 O Amazon Route 53 é um serviço da Web de Sistema de Nomes de Domínio (DNS)
 altamente disponível e escalável. O Route 53 conecta as requisições do usuário a
-aplicações da Internet executadas na AWS ou on-premises,
+aplicações da Internet executadas na AWS ou on-premises,<br>
 https://aws.amazon.com/route53/?nc2=h_ql_prod_nt_r53
 
 **Incorretas**
@@ -868,22 +870,22 @@ Apenas o plano de suporte enterprise oferece o gerenciamento de contas técnico.
 Existem várias configurações de serviços de acordo com cada plano de suporte.
 Os planos vigentes são Basic, Developer, Business, Enterprise on ramp e Enterprise.
 As características que variam em cada plano são as seguintes:
-- Verificação de práticas recomendas do AWS Trusted Advisor
-- Suporte técnico aprimorado
-- Tempo de resposta
-- Orientações de arquitetura
-- Gerenciamento programático de casos
-- Suporte a software de terceiros
-- Programas proativos e autoatendimento
-- Gerenciamento de contas técnico
-- Treinamento
-- Assistência à conta
-- Preço
+- Verificação de práticas recomendas do AWS Trusted Advisor<br>
+- Suporte técnico aprimorado<br>
+- Tempo de resposta<br>
+- Orientações de arquitetura<br>
+- Gerenciamento programático de casos<br>
+- Suporte a software de terceiros<br>
+- Programas proativos e autoatendimento<br>
+- Gerenciamento de contas técnico<br>
+- Treinamento<br>
+- Assistência à conta<br>
+- Preço<br>
 https://aws.amazon.com/premiumsupport/plans/
 
 **Incorretas**
 
-Os outros planos das opções não oferecem esse serviço.
+Os outros planos das opções não oferecem esse serviço.<br>
 O plano enterprise on ramp, que foi lançado recentemente, oferece um grupo de
 gerentes de contas técnicos para fornecer orientação proativa e coordenar o acesso a
 programas e especialistas da AWS para o gerenciamento de contas técnico.
@@ -903,7 +905,7 @@ para muitos serviços dentro da AWS?
 
 **Correta**
 
-KMS - Key Management Service
+KMS - Key Management Service<br>
 https://aws.amazon.com/kms/?nc2=type_a
 
 **Incorretas**
@@ -911,7 +913,7 @@ https://aws.amazon.com/kms/?nc2=type_a
 O AWS Config é um serviço que permite acessar, auditar e avaliar as configurações dos
 recursos da AWS. O Config monitora e grava continuamente registros das configurações
 de recursos da AWS e lhe permite automatizar a avaliação das configurações registradas
-com base nas configurações desejadas
+com base nas configurações desejadas<br>
 AWS KSM e AWS Keys não existem
 
 #
@@ -931,19 +933,19 @@ de dados relacionais?
 
 O Amazon Relational Database Service (RDS) é uma coleção de serviços gerenciados
 que facilita a configuração, operação e escalabilidade de bancos de dados na nuvem.
-Oferta os mecanismos abaixo:
+Oferta os mecanismos abaixo:<br>
 Amazon Aurora compatível com MySQL, Amazon Aurora compatível com PostgreSQL,
 MySQL, MariaDB, PostgreSQL, Oracle e SQL Server. Depois, implante on-premises com
-o Amazon RDS on AWS Outposts.
+o Amazon RDS on AWS Outposts.<br>
 https:Waws.amazon.com/pt/rds/?nc2=type_a
 
 **Incorretas**
 
 O AWS Database Migration Service (AWS DMS) ajuda você a migrar bancos de dados
-para a AWS de modo rápido e seguro
+para a AWS de modo rápido e seguro<br>
 O AWS Key Management Service (KMS) facilita a criação e o gerenciamento de chaves
 criptográficas e o controle do seu uso em uma ampla variedade de serviços daAWS e em
-seus aplicativos.
+seus aplicativos.<br>
 O Amazon DynamoDB é um banco de dados de valores-chave e documentos que oferece
 desempenho em milissegundos de um dígito em qualquer escala. E um banco de dados
 totalmente gerenciado, multirregional, multiativo e durável com segurança, backup e
@@ -957,7 +959,7 @@ Você vai lançar uma aplicação que precisa de 5 a 10 instâncias EC2 ativas d
 a quantidade de usuários logados. Qual é o serviço da AWS que possui um mecanismo
 para direcionar as requisições de forma distribuída entre esses servidores?
 
-- [X] *ELB*
+- [X] ELB
 - [ ] Route53
 - [ ] Securit Group
 - [ ] Auto Scalling
@@ -966,15 +968,15 @@ para direcionar as requisições de forma distribuída entre esses servidores?
 
 **Correta**
 
-ELB faz a distribuição de cargas entre as instâncias
+ELB faz a distribuição de cargas entre as instâncias<br>
 https://aws.amazon.com/pt/elasticloadbalancing/?whats-new-cards-elb.sort-
 by=item.additionalFields.postDateTime&whats-new-cards-elb.sort-order=desc
 
 **Incorretas**
 
-O Route53 é o DNS, servidor de domínios
+O Route53 é o DNS, servidor de domínios<br>
 O Security Group é a camada que protege o tráfego de dados de instâncias dentro de
-uma rede ou subrede.
+uma rede ou subrede.<br>
 O Auto Scalling provisiona ou desprovisiona as instâncias necessárias para atender a
 demanda dos usuários da aplicação.
 
@@ -988,7 +990,7 @@ instável. Qual serviço da AWS oferece uma família de produtos para sua empres
 conseguir realizar essa migração de forma física?
 
 - [ ] AWS DataSync
-- [X] *AWS Snowball*
+- [X] AWS Snowball
 - [ ] AWS DirectConnect
 - [ ] AWS DMS
 
@@ -996,19 +998,19 @@ conseguir realizar essa migração de forma física?
 
 **Correta**
 
-AWS Snowball
+AWS Snowball<br>
 Nestes casos de problemas com infraestrutura de datacenter e rede atuais, a AWS
 fornece serviços que transportam seus dados em cases em caminhões, navios, aviões,
-etc.. até a AWS.
+etc.. até a AWS.<br>
 https://aws.amazon.com/pt/snow/?nc2=h_ql_prod_mt_sno
 
 **Incorretas**
 
 O AWS DataSync é um serviço utilizado para realizar a sincronização de dados de forma
 automática da sua infraestrutura on premisse com a AWS e utiliza as conexões de rede
-estabelecidas.
+estabelecidas.<br>
 O DMS - DataBase Migration Service é utilizado para realizar a migração de banco de
-dados.
+dados.<br>
 O AWS Direct Connect é uma solução de serviço de nuvem que facilita o
 estabelecimento de uma conexão de rede dedicada entre suas instalações e a AWS
 
@@ -1019,7 +1021,7 @@ Qual é o serviço de data warehouse da Amazon utilizado pelas áreas de BI, que
 cruzamento de vários dados estruturado e semi estruturados para gerar conhecimento
 para o negócio?
 
-- [X] *Amazon RedShift*
+- [X] Amazon RedShift
 - [ ] Kinesis
 - [ ] O EMR
 - [ ] Power BI
@@ -1031,13 +1033,13 @@ para o negócio?
 O serviço do Amazon Redshift gerencia todo o trabalho de configuração, operação e
 escalabilidade de um data warehouse. Essas tarefas incluem capacidade de
 provisionamento, monitoramento e backup do cluster e aplicação de patches e
-atualizações ao mecanismo Amazon Redshift.
+atualizações ao mecanismo Amazon Redshift.<br>
 https://docs.aws.amazon.com/pt_br/redshift/latest/mgmt/overview.html
 
 **Incorretas**
 
-O EMR é a plataforma de Big Data da AWS
-O Power BI não é um serviço da AWS
+O EMR é a plataforma de Big Data da AWS<br>
+O Power BI não é um serviço da AWS<br>
 O Kinesis é um serviço para transferir dados entre vários serviços da AWS através de
 streaming
 
@@ -1057,14 +1059,14 @@ recomendado para essa finalidade?
 
 **Correta**
 
-ElasticCache for Redis
+ElasticCache for Redis<br>
 https://aws.amazon.com/pt/elasticache/redis/
 
 **Incorretas**
 
-O EBS fornece block storage para as instâncias EC2.
-O S3 é o serviço de armazenamento padrão de objetos(arquivos + metadados) da AWS.
-O EventBridge é um barramento de eventos para diversos serviços e aplicações da AWS.
+O EBS fornece block storage para as instâncias EC2.<br>
+O S3 é o serviço de armazenamento padrão de objetos(arquivos + metadados) da AWS.<br>
+O EventBridge é um barramento de eventos para diversos serviços e aplicações da AWS.<br>
 
 #
 
@@ -1082,17 +1084,17 @@ e compor arquiteturas de computação sem servidor e sem perder nenhuma mensagem
 **Correta**
 
 O Amazon Simple aueue Service (SQS) é um serviço de filas de mensagens gerenciado
-que permite o desacoplamento e a escalabilidade de microsserviços, sistemas
+que permite o desacoplamento e a escalabilidade de microsserviços, sistemas<br>
 distribuídos e aplicações sem servidor. O SOS elimina a complexidade e a sobrecarga
 associadas ao gerenciamento e à operação de middleware orientado a mensagens, além
-de permitir que os desenvolvedores se dediquem a criar diferenciais.
+de permitir que os desenvolvedores se dediquem a criar diferenciais.<br>
 https://aws.amazon.com/pt/sqs/
 
 **Incorretas**
 
-SNS - Simple Notification Service é o serviço de Pub/Sub
-O Lambda é utilizado para a implementação de funções sem servidor
-O Fargate é utilizado para o uso de container sem servidor
+SNS - Simple Notification Service é o serviço de Pub/Sub<br>
+O Lambda é utilizado para a implementação de funções sem servidor<br>
+O Fargate é utilizado para o uso de container sem servidor<br>
 
 #
 
@@ -1100,10 +1102,10 @@ O Fargate é utilizado para o uso de container sem servidor
 Qual é o serviço que permite coletar e armazenar logs de recursos, aplicativos e serviços,
 praticamente em tempo real, para diversas finalidades de processos e negócio?
 
-CloudTrail
-Logs
-CloudLogs
-*CloudWatch Logs*
+- [ ] CloudTrail
+- [ ] Logs
+- [ ] CloudLogs
+- [X] CloudWatch Logs
 
 ### Explicação
 
@@ -1111,19 +1113,19 @@ CloudLogs
 
 Você pode usar o Amazon CloudWatch Logs para monitorar, armazenar e acessar seus
 arquivos de log em suas instâncias do Amazon Elastic Compute Cloud (Amazon EC2), no
-AWS CloudTraiI, no Route 53 ou em outras origens. O CloudWatch Logs permite
+AWS CloudTraiI, no Route 53 ou em outras origens.<br> O CloudWatch Logs permite
 centralizar os logs de todos os sistemas, aplicações e produtos da AWS que você usa em
 um único serviço altamente escalável. Você pode facilmente visualizá-los, pesquisá-los
 por códigos de erro ou padrões específicos, filtrá-los com base em campos específicos
-ou arquivá-los com segurança para análise futura:
+ou arquivá-los com segurança para análise futura:<br>
 https://docs.aws.amazon.com/pt_br/AmazonCIoudWatch/Iatest/Iogs/WhatIsCIoudWatc
 hLogs.html
 
 **Incorretas**
 
-CloudLogs e Logs não serviços disponíveis na AWS.
+CloudLogs e Logs não serviços disponíveis na AWS.<br>
 O CloudTrail é utilizado para logar ações de usuários em APIS de serviços da AWS, muito
-utilizado em auditorias de uso das contas.
+utilizado em auditorias de uso das contas.<br>
 
 #
 
@@ -1132,16 +1134,16 @@ Sua aplicação precisa que os dados estejam estruturados e distribuídos em tab
 relacionadas por chaves, para atender um requisito de uma funcionalidade. Qual banco
 de dados abaixo não é indicado para esse fim?
 
-MariaDB
-Aurora
-O MySql
-*DynamoDB*
+- [ ] MariaDB
+- [ ] Aurora
+- [ ] O MySql
+- [X] DynamoDB
 
 ### Explicação
 
 **Correta**
 
-O DynamoDB não é um banco relacional e não atende esses requisitos
+O DynamoDB não é um banco relacional e não atende esses requisitos<br>
 https://aws.amazon.com/pt/search/?searchQuery=AWS+Dynamo Db
 
 **Incorretas**
@@ -1154,10 +1156,10 @@ Os demais bancos são relacionais e podem ser utilizados para a finalidade da qu
 Qual serviço da AWS abaixo deve ser utilizado para liberar acesso na conta para 3
 desenvolvedores novos que chegaram no seu time?
 
-S3
-EC2
-CloudFront
-*IAM*
+- [ ] S3
+- [ ] EC2
+- [ ] CloudFront
+- [X] IAM
 
 ### Explicação
 
@@ -1167,9 +1169,9 @@ IAM é o serviço utilizado para gestão de acessos de pessoas e aplicações na
 
 **Incorretas**
 
-S3 é para armazenar objetos, arquivos e seus metadados em Buckets
+S3 é para armazenar objetos, arquivos e seus metadados em Buckets<br>
 CloudFront é pra auxiliar na distribuição de conteúdo, diminuindo taxa de transferência e
-melhorando a experiência do usuário na ponta.
+melhorando a experiência do usuário na ponta.<br>
 EC2 é pra fornecer processamento, vários opções de computação
 
 #
@@ -1178,32 +1180,32 @@ EC2 é pra fornecer processamento, vários opções de computação
 Qual dos seguintes componentes de rede pode ser usado para hospedar recursos EC2
 na AWS?
 
-AWS Autoscaling
-AWS Trusted Advisor
-AWS Elastic Load Balancer
-*AWS VPC*
+- [ ] AWS Autoscaling
+- [ ] AWS Trusted Advisor
+- [ ] AWS Elastic Load Balancer
+- [X] AWS VPC
 
 ### Explicação
 
 **Correta**
 
 O Amazon Virtual Private Cloud (Amazon VPC) oferece controle total sobre seu ambiente
-de redes virtual, incluindo posicionamento de recursos, conectividade e segurança.
+de redes virtual, incluindo posicionamento de recursos, conectividade e segurança.<br>
 Comece a usar configurando sua VPC no console de serviço AWS. Em seguida, adicione
-recursos a ela, como instâncias do Amazon Elastic Compute Cloud (EC2) e Amazon
+recursos a ela, como instâncias do Amazon Elastic Compute Cloud (EC2) e Amazon<br>
 Relational Database Service (RDS). Por fim, defina como suas VPCs se comunicam entre
 si, entre contas, zonas de disponibilidade (AZs) ou Regiões da AWS. No exemplo abaixo,
-o tráfego de rede está sendo compartilhado entre duas VPCs em cada região
+o tráfego de rede está sendo compartilhado entre duas VPCs em cada região<br>
 https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
 
 **Incorretas**
 
 ELB - O Elastic Load Balancing distribui automaticamente o tráfego de entrada de
 aplicações entre diversos destinos, como instâncias do Amazon EC2, contêineres,
-endereços IP, funções do Lambda e dispositivos virtuais.
+endereços IP, funções do Lambda e dispositivos virtuais.<br>
 O Amazon EC2 Auto Scaling ajuda a manter a disponibilidade das aplicações e permite
 adicionar ou remover instâncias do EC2 automaticamente de acordo com as condições
-que você definir.
+que você definir.<br>
 O AWS Trusted Advisor faz recomendações que ajudam você a seguir as melhores
 práticas da AWS. O Trusted Advisor avalia a sua conta através de verificações. Essas
 verificações identificam formas de otimizar sua infraestrutura da AWS, aumentar a
@@ -1215,37 +1217,38 @@ segurança e o desempenho, reduzir os custos gerais e monitorar as cotas do serv
 Tráfego de dados é um item bastante relevante quando falamos de custos na AWS. Qual
 das opções abaixo apresenta o cenário onde o tráfego é livre de custos?
 
-transferência de dados de saída entre serviços do mesmo continente.
-transferência de dados de saída entre serviços entre todas as Regiões
-transferência de dados de saída entre serviços dentro da mesma Região (Region)
-O Todo tráfego é cobrado
+- [ ] transferência de dados de saída entre serviços do mesmo continente.
+- [ ] transferência de dados de saída entre serviços entre todas as Regiões
+- [X] transferência de dados de saída entre serviços **dentro da mesma Região** (Region)
+- [ ] O Todo tráfego é cobrado
 
 ### Explicação
 
 **Correta**
 
 Os dados transferidos entre serviços na mesma região não têm custo, desta forma, os
-dados que saem não são cobrados.
+dados que saem não são cobrados.<br>
 Outro cenário de gratuidade é o de entrada de dados.
 
 **Incorretas**
 
-Nem todo tráfego é cobrado.
-Tráfego de saída entre regiões é cobrado.
+Nem todo tráfego é cobrado.<br>
+Tráfego de saída entre regiões é cobrado.<br>
 Um continente pode conter mais de uma região e neste caso será cobrado.
 
 #
 
 ## Pergunta 44: 
+
 Qual é o serviço da AWS que pode ser utilizado para sua equipe desenvolver, compilar e
 implantar, rapidamente, aplicativos na AWS a partir de modelos, além de disponibilizar
 uma interface de usuário que permite o gerenciamento das atividades de
 desenvolvimento de projeto e de problemas com base no Jira Atlassian?
 
-AWS Codecommit
-AWS CodeBuild
-AWS CodeDeploy
-AWS CodeStar
+- [ ] AWS Codecommit
+- [ ] AWS CodeBuild
+- [ ] AWS CodeDeploy
+- [X] AWS CodeStar
 
 ### Explicação
 
@@ -1254,26 +1257,27 @@ AWS CodeStar
 O AWS CodeStar permite a integração de várias ferramentas de desenvolvimento, desde
 IDES, esteiras de CI/CD e gerenciamento de projetos para auxiliar e acelerar a entrega
 de software. Disponibiliza vários modelos em diversas linguagens de programação para
-acelerar o desenvolvimento de aplicativos.
+acelerar o desenvolvimento de aplicativos.<br>
 https://aws.amazon.com/pt/codestar/
 
 **Incorretas**
 
-AWS CodeBuild é utilizado para compilar e testar o aplicativo na esteira.
-AWS CodeCommit é utilizado para fazer o gerenciamento de código fonte.
-AWS CodeDeploy é utilizado para fazer a implantação do aplicativo.
+AWS CodeBuild é utilizado para compilar e testar o aplicativo na esteira.<br>
+AWS CodeCommit é utilizado para fazer o gerenciamento de código fonte.<br>
+AWS CodeDeploy é utilizado para fazer a implantação do aplicativo.<br>
 
 #
 
 ## Pergunta 45: 
+
 Qual é a maneira mais fácil de lançar rapidamente milhares de containers em uma ampla
 variedade de opções de computação da AWS, usando o seu CI/CD e ferramentas de
 automação de sua preferência?
 
-Com o Amazon Lambda
-Com o Amazon EC2
-*Com o Amazon ECS*
-Com o Amazon CodePipeline
+- [ ] Com o Amazon Lambda
+- [ ] Com o Amazon EC2
+- [X] Com o Amazon ECS
+- [ ] Com o Amazon CodePipeline
 
 ### Explicação
 
@@ -1285,27 +1289,28 @@ blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc
 
 **Incorretas**
 
-O Lambda é utilizado implementar funções sem servidor na AWS
+O Lambda é utilizado implementar funções sem servidor na AWS<br>
 O EC2 é utilizado para implementar diversos tipos de máquinas para diversos usos em
 aplicações na AWS, é base para o ECS, mas deve ser gerenciado pelo mesmo para
 habilitar o uso fácil de container na AWS. E possível fazer manualmente o processo de
-container no EC2, mas sem o ECS é muito mais trabalhoso.
+container no EC2, mas sem o ECS é muito mais trabalhoso.<br>
 O AWS CodePipeline é utilizado para a implementação de uma esteira de
-desenvolvimento na AWS.
+desenvolvimento na AWS.<br>
 
 #
 
 ## Pergunta 46: 
+
 Qual é o serviço da AWS que permite que os desenvolvedores foquem apenas na
 codificação, enquanto realiza automaticamente o provisionamento de toda a
 infraestrutura para a aplicação ser executada, o balanceamento das cargas, a
 implementação de monitoramento e a implantação. Além disso, esse serviço permite a
 codificação em .Net, Java, PHP, Node.js, Python, Ruby e Go entre outras.
 
-*AWS ElasticBeanStalk*
-AWS ECS
-AWS CodeDeploy
-Fargate
+- [X] AWS ElasticBeanStalk
+- [ ] AWS ECS
+- [ ] AWS CodeDeploy
+- [ ] Fargate
 
 ### Explicação
 
@@ -1316,31 +1321,32 @@ seus negócios. E um serviço para implementar e escalar aplicações e serviço
 enquanto você só precisa se preocupar com o desenvolvimento do seu código. Esse
 serviço gerencia automaticamente a implantação, desde o provisionamento de
 capacidade, balanceamento de carga e escalabilidade automática até o monitoramento
-da integridade de aplicações.
+da integridade de aplicações.<br>
 https:Waws.amazon.com/elasticbeanstalk/?nc2=h_ql_prod_cp_ebs
 
 **Incorretas**
 
 O AWS CodeDeploy é um serviço totalmente gerenciado de implantação que automatiza
 implantações de software em diversos serviços de computação como Amazon EC2, AWS
-Fargate, AWS Lambda e servidores locais.
-O AWS Fargate é um mecanismo de computação sem servidor para contêineres
+Fargate, AWS Lambda e servidores locais.<br>
+O AWS Fargate é um mecanismo de computação sem servidor para contêineres<br>
 O Amazon Elastic Container Service (Amazon ECS) é um serviço totalmente gerenciado
 de orquestração de contêineres que ajuda a implantar, gerenciar e escalar facilmente
-aplicações conteinerizadas
+aplicações conteinerizadas<br>
 
 #
 
 ## Pergunta 47: 
+
 Sua empresa iniciou um piloto de uma aplicação e ainda não tem a dimensão de quantos
 clientes irão utilizá-la. Essa aplicação precisa ter alta disponibilidade e o piloto tem
 previsão de duração de três meses. Qual plano de pagamento é o mais indicado para
 esse contexto?
 
-O Spot
-Reserved
-*On-Demand*
-Dedicated Hosts
+- [ ] O Spot
+- [ ] Reserved
+- [X] On-Demand
+- [ ] Dedicated Hosts
 
 ### Explicação
 
@@ -1352,69 +1358,73 @@ instâncias de máquinas serão utilizadas, o plano On-Demand é o mais indicado
 **Incorretas**
 
 Reserved é recomendado quando já existe uma previsão de uso de no mínimo 1 ano.
-Spot é recomendado para processos que não requerem provisionamento imediato.
+Spot é recomendado para processos que não requerem provisionamento imediato.<br>
 Dedicated Hosts é indicado quando você necessita de servidores físicos dedicados.
 
 #
 
 ## Pergunta 48: 
-Usuários que fazem uso final de aplicações em cloud sem se preocuparem em como
-foram construídas e implementadas fazem uso de qual tipo de cloud?
 
-laaS
-BaaS
-PaaS
-*SaaS*
+Usuários que fazem uso final de aplicações em cloud **sem se preocuparem** em como
+**foram construídas e implementadas** fazem uso de qual tipo de cloud?
+
+- [ ] laaS
+- [ ] BaaS
+- [ ] PaaS
+- [X] SaaS
 
 ### Explicação
 
 **Correta**
 
 SaaS - Software como serviço, a aplicação já está pronta para uso. Ex. e-mails, drivers,
-etc.
+etc.<br>
 https://aws.amazon.com/what-is-cIoud-computing/?nc2=h_qI_Ie_int_cc
 
 **Incorretas**
 
-- IaaS - Infraestrutura com serviço.
-
-- PaaS - Plataforma como serviço.
-
-- BaaS - Backend como serviço.
+- IaaS - Infraestrutura com serviço.<br>
+- PaaS - Plataforma como serviço.<br>
+- BaaS - Backend como serviço.<br>
 
 #
 
 ## Pergunta 49: 
-Qual é o plano de suporte que oferece tempo de resposta menor que 15 minutos para
+Qual é o plano de suporte que oferece **tempo de resposta menor que 15 minutos** para
 caso de sistema essencial aos negócios inativo?
 
-*Enteprise*
-Developer
-Todos
-Business
+- [X] Enteprise
+- [ ] Developer
+- [ ] Todos
+- [ ] Business
 
 ### Explicação
 
-Os planos de suporte são o Basic, Developer, Business, Enterprise on-ramp(novo) e
-Enterprise
+Os planos de suporte são:
+- Basic<br>
+- Developer<br>
+- Business<br>
+- Enterprise on-ramp(novo)<br>
+- Enterprise<br>
 Para o Basic e Developer não há menção de tempo de resposta para sistema de
-produção inativo, pois esse planos não são recomendados para cargas de produção.
-Para o Business é menos de 1 horas
-Para o Enterprise on-ramp é menos de 30 minutos
-Para o Enterprise é menos de 15 minutos
-Recomendo estudar e comparar as diferenças dos planos diretamente no site da AWS
+produção inativo, pois esse planos não são recomendados para cargas de produção.<br>
+Para o Business é menos de 1 horas<br>
+Para o Enterprise on-ramp é menos de 30 minutos<br>
+Para o Enterprise é menos de 15 minutos<br>
+Recomendo estudar e comparar as diferenças dos planos diretamente no site da AWS<br>
 https://aws.amazon.com/pt/premiumsupport/plans/?nc=sn&loc=l
 
 #
 
 ## Pergunta 50: 
-Qual serviço utiliza Inteligência Artificial e analisa dados gerados por eventos de diversos
-serviços e armazenados no S3, evitando que atividades maliciosas sejam realizadas?
 
-AWS Shield
-AWS Malicious
-AWS GuardDuty
-AWS Macie
+Qual serviço utiliza **Inteligência Artificial** e analisa dados gerados por eventos de diversos
+serviços e armazenados no S3, **evitando** que **atividades maliciosas** sejam realizadas?
+
+- [ ] AWS Shield
+- [ ] AWS Malicious
+- [X] AWS GuardDuty
+- [ ] AWS Macie
 
 ### Explicação
 
@@ -1422,35 +1432,36 @@ AWS Macie
 
 AWS GuardDuty utiliza Inteligência Artificial e analisa dados gerados por eventos de
 diversos serviços e armazenados no S3, evitando que atividades maliciosas sejam
-realizadas
+realizadas<br>
 https://aws.amazon.com/guardduty/?nc2=h_qI_prod_se_gd
 
 **Incorretas**
 
 O Amazon Macie é um serviço de segurança e privacidade de dados totalmente
-gerenciado que usa machine learning e correspondência de padrões para descobrir e
+gerenciado que usa machine learning e correspondência de **padrões** para descobrir e
 proteger seus dados confidenciais na AWS. A medida que as organizações gerenciam
 volumes crescentes de dados, identificar e proteger seus dados confidenciais em escala
-pode se tornar cada vez mais complexo, caro e demorado.
+pode se tornar cada vez mais complexo, caro e demorado.<br>
 O AWS Shield é um serviço gerenciado de proteção contra DDoS (Negação de serviço
 distribuída) que protege os aplicativos executados na AWS. O AWS Shield oferece de
 detecção e mitigações em linha automáticas e sempre ativas que minimizam o tempo de
 inatividade e a latência dos aplicativos, fornecendo proteção contra DDoS sem
-necessidade de envolver o AWS Support.
+necessidade de envolver o AWS Support.<br>
 AWS Malicius não existe.
 
 #
 
 ## Pergunta 51: 
+
 A área de marketing da sua empresa está planejando fazer uma campanha que durará 12
 meses, em vista disso, você foi avisado que haverá um aumento no número de clientes
 no site e viu que será necessário subir mais 3 instâncias EC2 para atender a demanda
 durante esse período. Oual tipo de instância terá um melhor custo nesse cenário?
 
-Spot
-Reserved
-Dedicated Hosts
-*On Demand*
+- [ ] Spot
+- [ ] Reserved
+- [ ] Dedicated Hosts
+- [X] On Demand
 
 ### Explicação
 
@@ -1463,10 +1474,10 @@ demand)
 **Incorretas**
 
 Por padrão o Dedicated Hosts é cobrado no modelo sob demanda, mais caro comparado
-ao Reserved.
-On-demand é mais caro que o o Reserved, mas não exige um acordo de tempo.
+ao Reserved.<br>
+On-demand é mais caro que o o Reserved, mas não exige um acordo de tempo.<br>
 Spot é mais barato, mas faz uso da capacidade excedente da nuvem e não garante o
-provisionamento programado para atender a carga no período especificado.
+provisionamento programado para atender a carga no período especificado.<br>
 
 #
 
@@ -1476,10 +1487,10 @@ Você desenvolveu um sistema de workflow orientado a eventos e gostaria que uma
 função sem servidor gravasse uma log num banco de dados ao término do processo.
 Qual serviço é o mais indicado para essa finalidade?
 
-SQS
-SNS
-SES
-*Lambda*
+- [ ] SQS
+- [ ] SNS
+- [ ] SES
+- [X] Lambda
 
 ### Explicação
 
@@ -1487,27 +1498,27 @@ SES
 
 O AWS Lambda é um serviço de computação sem servidor e orientado a eventos que
 permite executar código para praticamente qualquer tipo de aplicação ou serviço de
-backend sem provisionar ou gerenciar servidores.
+backend sem provisionar ou gerenciar servidores.<br>
 https://docs.aws.amazon.com/pt_br/lambda/latest/dg/welcome.html
 
 **Incorretas**
 
-SQS é o serivço de mensageria indicado para desacoplar sistemas.
-SNS é o serviço de notificação no modelo Pub/Sub e tópicos.
-SES é o serviço para o envio de e-mails.
+SQS é o serivço de mensageria indicado para **desacoplar** sistemas.<br>
+SNS é o serviço de **notificação no modelo Pub/Sub** e tópicos.<br>
+SES é o serviço para o envio de **e-mails**.<br>
 
 #
 
 ## Pergunta 53: 
 Seu time de desenvolvimento percebeu que 30% das consultas feitas por uma
-aplicação no banco de dados trazem sempre o mesmo resultado. Qual é o serviço da
-AWS que pode ser implementado para manter esses resultados em cache reduzindo os
+aplicação no banco de dados trazem sempre **o mesmo resultado**. Qual é o serviço da
+AWS que pode ser implementado para manter esses resultados **em cache** reduzindo os
 acessos aos bancos de dados?
 
-*Amazon ElasticCache*
-Amazon EC2
-Amazon EBS
-Amazon Cache
+- [X] Amazon ElasticCache
+- [ ] Amazon EC2
+- [ ] Amazon EBS
+- [ ] Amazon Cache
 
 ### Explicação
 
@@ -1519,9 +1530,9 @@ AWS ElastiCache - https:Waws.amazon.com/elasticache/?nc2=h_ql_prod_db_elc
 O Amazon Elastic Block Store (EBS) é um serviço de armazenamento em bloco fácil de
 usar e de alta performance, projetado para uso com o Amazon Elastic Compute Cloud
 (EC2) para taxas de transferência e cargas de trabalho intensivas de transações em
-qualquer escala.
+qualquer escala.<br>
 O Amazon Elastic Compute Cloud (Amazon EC2) é um serviço Web que disponibiliza
-capacidade computacional segura e redimensionável na nuvem.
+capacidade computacional segura e redimensionável na nuvem.<br>
 Amazon Cache não é um serviço existente na AWS
 
 #
@@ -1529,10 +1540,10 @@ Amazon Cache não é um serviço existente na AWS
 ## Pergunta 54: 
 Qual é o serviço utilizado para integrar contas AWS?
 
-*AWS Organizations*
-AWS MFA
-AWS CloudFormation
-AWS Cost Explorer
+- [X] AWS Organizations
+- [ ] AWS MFA
+- [ ] AWS CloudFormation
+- [ ] AWS Cost Explorer
 
 ### Explicação
 
@@ -1544,9 +1555,9 @@ contas, muito útil para empresas muito grandes.
 
 **Incorretas**
 
-AWS Cost Explorer para explorar custos que sua infraestrutura está consumindo
+AWS Cost Explorer para explorar custos que sua infraestrutura está consumindo<br>
 MFA - Fator de Autenticação duplo, que adiciona um passo a mais na autenticação do
-acesso
+acesso<br>
 CloudFormation - utilizado para IAC, Infraestrutura como código, onde são definidos
 arquivos templates com todos os serviços e configurações que se deseja implementar
 numa infraestrutura.
@@ -1557,21 +1568,21 @@ numa infraestrutura.
 
 Qual é a melhor definição para Region(Região)?
 
-*Uma localização geográfica no mundo que agrupa algumas availability zones(zonas de disponibilidade) e edge locations(redes de borda).*
-Uma region(região) é um data center dentro de uma avalibility zone(zonas de disponibilidade)
-Uma region(região) é a mesma coisa que uma edge location(rede de borda)
-Uma region(região) é um continente que aloca todos os data centers da AWS.
+- [X] Uma localização geográfica no mundo que agrupa algumas availability zones(zonas de disponibilidade) e edge locations(redes de borda).
+- [ ] Uma region(região) é um data center dentro de uma avalibility zone(zonas de disponibilidade)
+- [ ] Uma region(região) é a mesma coisa que uma edge location(rede de borda)
+- [ ] Uma region(região) é um continente que aloca todos os data centers da AWS.
 
 ### Explicação
 
 **Correta**
 
-A Nuvem AWS abrange aproximadamente 93 zonas de disponibilidade em 29 regiões
+A Nuvem AWS abrange aproximadamente 99 zonas de disponibilidade em 31 regiões
 geográficas em todo o mundo, mais de 400 locais da borda e 13 caches de borda
-regionais.
+regionais.<br>
 Uma região pode abranger mais de 1 país e 1 país pode ter mais de 1 região, dependendo
 da quantidade de clientes, localização, questões geopolíticas e estratégia de expansão
-da AWS.
+da AWS.<br>
 A região de São Paulo atualmente é composta por 3 zonas de disponibilidade, cada zona
 de disponibilidade pode ser composta por um ou mais data centers agrupados e isolados
 logicamente para garantir a alocação de serviços de forma redundante na mesma Região
@@ -1585,20 +1596,20 @@ ApiGateway para fazer cache de arquivos e dados.
 **Incorretas**
 
 Região, zonas de disponibilidade e redes de borda são itens distintos na infraestrutura
-global da AWS.
-Um continente pode terl ou mais regiões da AWS. Atualmente na América do Norte
+global da AWS.<br>
+Um continente pode ter uma ou mais regiões da AWS. Atualmente na América do Norte
 existem mais de 6, enquanto na América do Sul e na Africa existem 1.
 
 #
 
 ## Pergunta 56: 
 Qual dos pilares do Well-Architected Framework foca em como podemos continuamente
-melhorar processos e procedimentos?
+**melhorar processos e procedimentos**?
 
-*Excelência Operacional*
-Segurança
-Confiabilidade
-Performance Eficiente
+- [X] Excelência Operacional
+- [ ] Segurança
+- [ ] Confiabilidade
+- [ ] Performance Eficiente
 
 ### Explicação
 
@@ -1607,23 +1618,23 @@ Performance Eficiente
 O pilar Excelência operacional se concentra na execução e monitoramento sistemas e na
 melhoria contínua de processos e procedimentos. Os principais tópicos incluem
 automação de alterações, reação a eventos e definição de padrões para gerenciar as
-operações diárias.
+operações diárias.<br>
 A AWS Well-Architected ajuda arquitetos de nuvem a construir infraestruturas seguras,
 resilientes, eficientes e de alta performance para aplicações e workloads. Baseado em
 seis pilares (excelência operacional, segurança, confiabilidade, eficiência de
 performance, otimização de custos e sustentabilidade), o AWS Well-Architected fornece
 uma abordagem consistente para que clientes e parceiros avaliem arquiteturas e
-implementem designs que podem se expandir com o tempo.
+implementem designs que podem se expandir com o tempo.<br>
 https://aws.amazon.com/pt/architecture/well-architected/?wa-lens-whitepapers.sort-
 by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc
 
 **Incorretas**
 
-O pilar Segurança se concentra na proteção de informações e sistemas.
+O pilar Segurança se concentra na proteção de informações e sistemas.<br>
 O pilar da confiabilidade se concentra nos workloads que executam as funções
-pretendidas e na recuperação rápida de falhas em atender demandas.
+pretendidas e na recuperação rápida de falhas em atender demandas.<br>
 O pilar de eficiência de performance se concentra na alocação estruturada e simplificada
-de recursos de Tl e computação.
+de recursos de Tl e computação.<br>
 
 #
 
@@ -1631,16 +1642,16 @@ de recursos de Tl e computação.
 Qual é a classe de armazenamento do S3 que pode diminuir os custos, à medida que
 move os objetos automaticamente entre camadas, de acordo com a frequência de uso?
 
-S3 Standard
-S3 Standard Infrequent Access
-S3 Glacier
-*S3 Intelligent-Tiering*
+- [ ] S3 Standard
+- [ ] S3 Standard Infrequent Access
+- [ ] S3 Glacier
+- [X] S3 Intelligent-Tiering
 
 ### Explicação
 
 **Correta**
 
-S3 Intelligent-Tiering
+S3 Intelligent-Tiering<br>
 https:Waws.amazon.com/s3/storage-classes/?nc=sn&loc=3
 
 **Incorretas**
@@ -1650,14 +1661,14 @@ As demais classes não fazem a movimentação automática para as demais camadas
 #
 
 ## Pergunta 58: 
-Qual é o serviço de integração, totalmente gerenciado pela AWS, que permite transferir
-dados com segurança entre aplicativos de Software como Serviço (SaaS) como:
+Qual é o serviço de integração, totalmente gerenciado pela AWS, que permite **transferir**
+dados com segurança entre **aplicativos de Software como Serviço (SaaS)** como:
 Salesforce, Zendesk, Slack e ServiceNow, Amazon S3 e Amazon Redshift?
 
-Amazon DMS
-Amazon SNS
-*Amazon AppFlow*
-Amazon EventBridge
+- [ ] Amazon DMS
+- [ ] Amazon SNS
+- [X] Amazon AppFlow
+- [ ] Amazon EventBridge
 
 ### Explicação
 
@@ -1666,7 +1677,7 @@ Amazon EventBridge
 Com o AppFlow, você não precisa investir tempo significativo e uma equipe de
 desenvolvedores altamente qualificada para criar e manter conectores de API
 personalizados de serviços da AWS com o objetivo de fazer o intercâmbio de dados com
-aplicativos de SaaS.
+aplicativos de SaaS.<br>
 https:Waws.amazon.com/pt/appflow/?nc2=h_ql_prod_ap_af
 
 **Incorretas**
@@ -1674,13 +1685,13 @@ https:Waws.amazon.com/pt/appflow/?nc2=h_ql_prod_ap_af
 O Amazon EventBridge é um barramento de eventos sem servidor que torna mais fácil a
 criação de aplicações orientadas por eventos em escala usando eventos gerados com
 base em suas aplicações, aplicações integradas de software como serviço (SaaS) e
-serviços da AWS
+serviços da AWS<br>
 O Amazon Simple Notification Service (Amazon SNS) é um serviço de mensagens
 totalmente gerenciado para a comunicação de aplicação para aplicação (A2A) e de
 aplicação para pessoa (A2P).A funcionalidade pub/sub de A2A fornece tópicos para
 sistemas de mensagens de alta taxa de transferência baseados em push e de muitos
 para muitos entre sistemas distribuídos, microserviços e aplicativos sem servidor
-orientados por eventos
+orientados por eventos<br>
 O AWS Database Migration Service (AWS DMS) ajuda você a migrar bancos de dados
 para a AWS de modo rápido e seguro. O banco de dados de origem permanece
 totalmente operacional durante a migração, minimizando o tempo de inatividade de
@@ -1689,13 +1700,14 @@ aplicações que dependem do banco de dados
 #
 
 ## Pergunta 59: 
+
 Você deseja disponibilizar sua aplicação no endereço www.simuladoudemy.com. Qual
 serviço pode ser utilizada para essa finalidade?
 
-API Gateway
-AutoScalling
-*Route 53*
-S3
+- [ ] API Gateway
+- [ ] AutoScalling
+- [X] Route 53
+- [ ] S3
 
 ### Explicação
 
@@ -1704,27 +1716,27 @@ S3
 Se você deseja criar um site ou um aplicativo web, comece registrando o nome do seu
 site, conhecido como nome de domínio. O seu nome de domínio é o nome, como
 exemplo.com, que seus usuários inserem em um navegador para exibir o site, que pode
-ser registrado e gerenciado pelo Route 53
+ser registrado e gerenciado pelo Route 53<br>
 https://docs.aws.amazon.com/pt_br/Route53/Iatest/DeveIoperGuide/WeIcome.htmI
 
 **Incorretas**
 
-O API Gateway é utilizado para o gerenciamento de APIs.
+O API Gateway é utilizado para o gerenciamento de APIs.<br>
 O Auto Scalling é utilizado para escalar automaticamente o número de instâncias
-necessárias para suportar a carga necessária para executar as aplicações.
+necessárias para suportar a carga necessária para executar as aplicações.<br>
 O S3 pode ser habilitado para hospedar um site estático através de uma url do serviço,
 não por um domínio desejado pelo cliente.
 
 #
 
 ## Pergunta 60: 
-Qual é o serviço da AWS que permite selecionar uma imagem de uma máquina pré-
-configurada para lançar uma instâncias EC2?
 
-*AMI*
-IAM
-AWS IMG
-Amazon Image
+Qual é o serviço da AWS que permite selecionar uma **imagem de uma máquina pré-configurada** para lançar uma **instâncias EC2**?
+
+- [X] AMI
+- [ ] IAM
+- [ ] AWS IMG
+- [ ] Amazon Image
 
 ### Explicação
 
@@ -1734,7 +1746,7 @@ Uma Imagem de máquina da Amazon (AMI) fornece as informações necessárias par
 iniciar uma instância. Você deve especificar uma AMI ao iniciar uma instância. Você pode
 executar várias instâncias em uma única AMI quando precisa de várias instâncias com a
 mesma configuração. Você pode usar AMIs diferentes para executar instâncias quando
-precisa de instâncias com configurações diferentes.
+precisa de instâncias com configurações diferentes.<br>
 https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/AM Is.html
 
 **Incorretas**
@@ -1742,7 +1754,7 @@ https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/AM Is.html
 O AWS Identity and Access Management (IAM) permite que você gerencie com
 segurança o acesso aos serviços e recursos da AWS. Usando o IAM, você pode criar e
 gerenciar usuários e grupos da AWS e usar permissões para conceder e negar acesso a
-recursos da AWS.
+recursos da AWS.<br>
 Amazon Image e Amazon IMG não existem.
 
 #
@@ -1750,18 +1762,18 @@ Amazon Image e Amazon IMG não existem.
 ## Pergunta 61: Incorreto
 Quais dos itens abaixo fazem parte dos pilares do Well-Architected Framework? (Selecione 4 alternativas)
 
-*Performance Eficiente*
-Agilidade
-*Sustentabilidade*
-*Otimização de Custos*
-*Confiabilidade*
+- [X] Performance Eficiente
+- [ ] Agilidade
+- [X] Sustentabilidade
+- [X] Otimização de Custos
+- [X] Confiabilidade
 
 ### Explicação
 
 **Correta**s
 
 Os pilares são Excelência Operacional, Segurança, Confiabilidade, Performance
-Eficiente, Otimização de Custos e Sustentabilidade.
+Eficiente, Otimização de Custos e Sustentabilidade.<br>
 https://aws.amazon.com/architecture/well-architected/?nc2=h_ql_le_wa&wa-lens-
 whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-
 order=desc
@@ -1771,16 +1783,16 @@ order=desc
 ## Pergunta 62: 
 Um objeto de um Bucket do AWS S3 é composto por quais itens abaixo? (selecione 2)
 
-Role
-Arquivo
-Metadados
-Policy
+- [ ] Role
+- [X] Arquivo
+- [X] Metadados
+- [ ] Policy
 
 ### Explicação
 
 **Correta**
 
-Pode ser composto por arquivo e opcionalmente pelo Metadado do arquivo
+Pode ser composto por arquivo e opcionalmente pelo Metadado do arquivo<br>
 https://aws.amazon.com/pt/s3/getting-started/?nc=sn&loc=6&dn=1
 
 **Incorretas**
@@ -1790,32 +1802,34 @@ Role e Policy são recursos gerenciados pelo IAM.
 
 #
 
-## Pergunta 63: Correto
+## Pergunta 63: 
+
 Quais são as principais funcionalidades do Amazon SageMaker? (selecione dois)
 
-*Oferecer uma IDE para uso de Machine Learning*
-Preparar, Construir e implantar APIs Rest
-*Preparar, Construir, Treinar e Implantar modelos de machine learning na AWS*
-Preparar, Construir e Implantar modelos de banco de dados na AWS
-Preparar, documentar e publicar APIs com raml sawgger
+- [X] Oferecer uma IDE para uso de Machine Learning
+- [ ] Preparar, Construir e implantar APIs Rest
+- [X] Preparar, Construir, Treinar e Implantar modelos de machine learning na AWS
+- [ ] Preparar, Construir e Implantar modelos de banco de dados na AWS
+- [ ] Preparar, documentar e publicar APIs com raml sawgger
 
 ### Explicação
 
-O SageMaker é a plataforma com diversos serviços para apoia desenvolvedores e
-cientista de dados na implementação de aprendizado de máquina na AWS (Machine
-Learning)
-Visão dos processos de ML
+**O SageMaker** é a plataforma com diversos serviços para apoia desenvolvedores e
+cientista de dados na implementação de **aprendizado de máquina** na AWS (Machine
+Learning)<br>
+Visão dos processos de ML<br>
 https://aws.amazon.com/pt/sagemaker/
 
 #
 
 ## Pergunta 64: 
+
 Qual dos seguintes serviços permite registros de novos domínios?
 
-IAM
-ELB
-*Route53*
-AWS DNS
+- [ ] IAM
+- [ ] ELB
+- [X] Route53
+- [ ] AWS DNS
 
 ### Explicação
 
@@ -1828,10 +1842,10 @@ Route53 - https:Waws.amazon.com/route53/?nc2=type_a
 O AWS Identity and Access Management (IAM) permite que você gerencie com
 segurança o acesso aos serviços e recursos da AWS. Usando o IAM, você pode criar e
 gerenciar usuários e grupos da AWS e usar permissões para conceder e negar acesso a
-recursos da AWS
+recursos da AWS<br>
 O Elastic Load Balancing distribui automaticamente o tráfego de entrada de aplicações
 entre diversos destinos, como instâncias do Amazon EC2, contêineres, endereços IP,
-funções do Lambda e dispositivos virtuais.
+funções do Lambda e dispositivos virtuais.<br>
 AWS DNS não é um serviço existente na AWS
 
 #
@@ -1840,24 +1854,24 @@ AWS DNS não é um serviço existente na AWS
 Qual serviço da AWS faz recomendações para a otimização de segurança dos seus
 recursos?
 
-MFA
-IAM
-Security Group
-*Trusted Advisor*
+- [ ] MFA
+- [ ] IAM
+- [ ] Security Group
+- [X] Trusted Advisor
 
 ### Explicação
 
 **Correta**
 
 Trusted Advisor faz diversas recomendações de acordo com o plano de suporte
-contratado. As recomendações de otimização de segurança são algumas delas.
+contratado. As recomendações de otimização de segurança são algumas delas.<br>
 https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 **Incorretas**
 
 O IAM é utilizado para fazer o gerenciamento dos usuários, dos grupos e dos acessos as
-aplicações
+aplicações<br>
 O MFA é utilizado para adicionar um passo a mais no processo de autenticação do
-usuário no acesso a conta pela console.
+usuário no acesso a conta pela console.<br>
 O Security Group é uma camada de proteção utilizada para permitir ou negar o tráfego
-de dados em uma ou mais instâncias dentro de uma rede privada vitual.
+de dados em uma ou mais instâncias dentro de uma rede privada vitual.<br>
